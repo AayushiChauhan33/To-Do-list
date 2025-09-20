@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ My Epic To-Do List</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main class="app-container">
+        <header class="app-header">
+            <h1>🎯 My To-Do List</h1>
+            <p class="subtitle">Get things done like a boss! 💜</p>
+        </header>
+
+        <section class="input-section">
+            <form id="taskForm" class="task-form">
+                <label for="taskInput" class="task-label">What needs to be done?</label>
+                <div class="input-group">
+                    <input 
+                        type="text"
+                        id="taskInput"
+                        class="task-input"
+                        placeholder="Add a new task..."
+                        maxlength="100"
+                        required
+                    >
+                    <button type="submit" id="addBtn" class="add-btn">
+                        ➕ Add Task
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="tasks-section">
+            <div class="tasks-header">
+                <h2>Your Tasks</h2>
+                <span id="taskCounter" class="task-counter">0 tasks</span>
+            </div>
+            <ul id="taskList" class="task-list" role="list">
+                <!-- Tasks will appear here dynamically -->
+            </ul>
+            <div id="emptyState" class="empty-state">
+                <p>🎉 No tasks yet! Add one above to get started.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>
